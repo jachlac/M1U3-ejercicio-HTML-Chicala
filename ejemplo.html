@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> el primer html de jose</title>
+    <style>
+        table, th, td { 
+            border: 1px solid black;
+            }
+    </style>
 </head>
 <body>
     hola
@@ -27,6 +32,13 @@
         <li>item 2</li>
 
     </ul>
+    <ol>
+        <li value="10">item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+
+    </ol>
     <form action="/formulario" method="post"> <!--action especifica adonde se envian los datos del formulario cuando le doy al boton submit-->
         <!--la opcion GET manda los datos en formato de URL al servidor, creo que admite hasta 256 caracteres, post genera tipo un archivo-->
         <label for="nombre">nombre</label>
@@ -36,6 +48,29 @@
         <!-- placeholder indica o sugiere que hay que completar en el cuadro de texto-->
         <!--type="text" es por defecto, pero podria ser mail, password, radio (selector), checkbox, submit (boton), file (selecciona archivo),-->
         <input type="submit">
+        <button type="reset">Mandar Papu</button> <!--button a diferencia de input es mas personalizable, tiene funciones de reset, submit (por defecto) o boton para otro tipo de accion-->
     </form>
+    <table width="400">
+        <thead><!-- no siempre hace falta hacer esta separacion, supuestamente sirve para que algunos exploradores puedan hacer scroll separados del titulo de la tabla-->
+        <tr><!-- table row significa fila-->
+            <th>precio</th><!--son table headers-->
+            <th>cantidad</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>15</td><!--td es el valor standar de una fila, no es especial-->
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>17.50</td>
+            <td>54</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <td>total</td>
+            <td>79</td>
+        </tfoot>
+    </table>
 </body>
 </html> 
