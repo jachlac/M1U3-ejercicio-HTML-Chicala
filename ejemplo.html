@@ -11,13 +11,31 @@
     ....
     <h1>encabezado 1</h1>
     <h2>encabezado 2</h2>
+    <h3>mi tercer heading</h3>
+    <!--    esto es un coentario pulenta-->
+    <h4>mi cuarto heading</h4>
+    <h5>mi quinto heading</h5>
+    <hr>
     <p>este es un parrafo pepepe</p>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem esse atque libero. Voluptatibus earum omnis, aspernatur labore aut nostrum voluptatum dicta facere exercitationem id molestiae quaerat accusantium, nihil adipisci officiis!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti architecto nostrum blanditiis natus atque cumque repellat recusandae nemo distinctio, assumenda suscipit esse unde officia. Esse quis reprehenderit eveniet placeat aliquid?</p>
+    <a href="https://www.google.com" target="_blank"> ir a google</a> <!--tarjet me permite indicar si abre sobre la misma pestaña o habilita una nueva con el enlace-->
+    <br>
+    <img src="imagenes/cartel.png" alt="aca va una foto" width="600">
     <ul>
         <li>item 1</li>
         <li>item 2</li>
 
     </ul>
+    <form action="/formulario" method="post"> <!--action especifica adonde se envian los datos del formulario cuando le doy al boton submit-->
+        <!--la opcion GET manda los datos en formato de URL al servidor, creo que admite hasta 256 caracteres, post genera tipo un archivo-->
+        <label for="nombre">nombre</label>
+        <input value="peperulo" type="text" name="nombre" id="nombre" placeholder="aca va tu nombre"> <!--id permite hacer que al seleccionar el label "nombre" me ponga foco en la caja de texto, siempre y cuando haya especificado el id en el "for" del label-->
+        <!--value permite poner un valor por defecto prerellando, no es lo mismo que el placeholder que da un indicio de que completar-->
+        <!-- la propiedad name no se nos puede olvidar nunca, es la que indica que es el dato que se va a introducir en el cuadro de texto-->
+        <!-- placeholder indica o sugiere que hay que completar en el cuadro de texto-->
+        <!--type="text" es por defecto, pero podria ser mail, password, radio (selector), checkbox, submit (boton), file (selecciona archivo),-->
+        <input type="submit">
+    </form>
 </body>
-</html>
+</html> 
